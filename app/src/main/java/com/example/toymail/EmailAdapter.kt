@@ -3,6 +3,7 @@ package com.example.toymail
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -35,6 +36,7 @@ class EmailAdapter(private val emails: List<Email>) :
         val senderTextView: TextView
         val titleTextView: TextView
         val summaryTextView: TextView
+        val senderImageView: ImageView
 
         // We also create a constructor that accepts the entire item row
         // and does the view lookups to find each sub-view
@@ -42,6 +44,7 @@ class EmailAdapter(private val emails: List<Email>) :
             senderTextView = itemView.findViewById(R.id.senderTv)
             titleTextView = itemView.findViewById(R.id.titleTv)
             summaryTextView = itemView.findViewById(R.id.summaryTv)
+            senderImageView = itemView.findViewById(R.id.senderIv)
         }
 
     }
