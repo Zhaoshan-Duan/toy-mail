@@ -29,6 +29,6 @@ class MainActivity : AppCompatActivity() {
             emails.addAll(newEmails)
             adapter.notifyDataSetChanged()
         }
-
+        
     }
 }
